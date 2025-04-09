@@ -8,7 +8,7 @@ st.set_page_config(page_title="Conciliación Bancaria", layout="centered")
 st.title("💼 Conciliación Bancaria")
 
 # ---- Cargar archivo conciliacionPY.py como módulo externo ----
-spec = importlib.util.spec_from_file_location("conciliacionPY", "conciliacionGPT.py")
+spec = importlib.util.spec_from_file_location("conciliacionPY", "conciliacionGPTV2.py")
 conciliacion = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(conciliacion)
 
